@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Index1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+
+
+     body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #111, #222);
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.projects {
+    padding: 50px 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #111;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #f39c12;
+}
+
+.project-card h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #555;
+}
+     
+     
+</style>
+<body>
+    <header>
+        <h1>Home</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Headings</a></li>
+                <li><a href="#projects">Downloads</a></li>
+                <li><a href="#contact">Promossions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome To Our Home</h2>
+        <p>Discover And Download The letest Played Mods.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Navigation</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Downloads</h3>
+                <p>Download Mods, Contents, Software Tricks From There.</p>
+            </div>
+            <div class="project-card">
+                <h3>Headings</h3>
+                <p>See Letest News About Software Echo System.</p>
+            </div>
+            <div class="project-card">
+                <h3>Paid Promossions</h3>
+                <p>Promote Channels, Products, Softwares There.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Index/Home. All rights reserved.</p>
+    </footer>
+</body>
+</html>
